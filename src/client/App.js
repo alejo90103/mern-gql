@@ -22,7 +22,7 @@ class App extends Component {
   handleAllTasks(e) {
     $.ajax(
       {
-        url: 'http://localhost:3000/graphql',
+        url: '/graphql',
         data:{query: 'query {allTasks{_id, title, responsible, description, priority}}'},
         type: 'GET',
         dataType: 'json',
